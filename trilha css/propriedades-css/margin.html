@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trilha CSS</title>
+    <style>
+        /*margin: 
+        UM VALOR: a mesma margem é aplicada para todos os quatro lados.
+        DOIS VALORES: a primeira margem é aplicada aos lados superior e inferior
+        TRES VALORES: a primeira margem é apliacada ao topo, a segunda aos lados esquerdo e direito, e a terceira ao lado inferior.
+        QUATRO VALORES: as margens são aplicadas aos lados superior, direito, inferior e esquerdo, nesta ordem (sentido horário).
+
+        Referencia de site: https://developer.mozilla.org/pt-BR/docs/Web/CSS/margin
+        */
+    
+        div {
+            width: 200px;
+            height: 200px;
+        }
+    /*
+        #elemento-01 {
+            background: orange;
+        }
+        #elemento-02 {
+            background: purple;
+            margin-top: 10px;
+            margin-left: 25px;
+            margin-right: 30px;
+        }
+    */
+    
+        #elemento-01 {
+            background: orange;
+            margin: 20px 10px 40px 30px;
+        }
+        #elemento-02 {
+            background: purple;
+            margin: 20px auto;
+        }
+    </style>
+</head>
+<body>
+    <div id="elemento-01"></div>
+    <div id="elemento-02"></div>
+    
+</body>
+</html>

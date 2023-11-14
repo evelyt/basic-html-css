@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trilha CSS</title>
+    <style>
+    /*
+        Combinadores: qual tipo de relação entre 2 seletores.
+        1.Combinador descendente (espaço)
+        2. Combinador filho (>)
+        3. Combinador irmao adjacente (+)
+        4. Combinador irmao em geral (~)
+
+        [SELETOR] [COMBINADOR] [SELETOR]
+       
+    div p{
+        background: lightgreen;
+    }
+
+    div > p{
+        color: red;
+    }*/
+
+    .fundo-azul >p {
+        background: lightblue;
+    }
+    .fundo-verde >p {
+        background: lightgreen;
+    }
+
+
+    </style>
+</head>
+
+<body>
+    <div class="fundo-verde">
+        <p>Paragrafo 1 dentro da div</p>
+        <p>Paragrafo 2 dentro da div</p>
+        <span>
+            <p>Paragrafo 3 dentro do span</p>
+        </span>
+    </div>
+    <div class="fundo-azul">
+        <p>Paragrafo 4 dentro da div</p>
+        <p>Paragrafo 5 dentro da div</p>
+        <span>
+            <p>Paragrafo 6 dentro do span</p>
+        </span>
+    </div>
+    <p>Paragrafo 7 fora da div</p>
+    <p>Paragrafo 8 fora da div</p>
+</body>
+
+</html>

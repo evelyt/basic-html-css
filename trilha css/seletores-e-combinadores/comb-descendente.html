@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trilha CSS</title>
+    <style>
+        /*
+            Combinadores: qual tipo de relação entre 2 seletores.
+            1.Combinador descendente (espaço)
+            2. Combinador filho (>)
+            3. Combinador irmao adjacente (+)
+            4. Combinador irmao em geral (~)
+
+            [SELETOR] [COMBINADOR] [SELETOR]
+       
+        li{
+            color: red;
+        }
+        li li {
+            color: green;
+        }
+        #lista-01 li{
+            background: lightblue;
+        }*/
+
+        .fundo-verde li{
+            background: lightgreen;
+        }
+        .fundo-azul li{
+            background: lightblue;
+        }
+
+        .fundo-verde #sublista-01 li{
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <ul>
+        <li class="fundo-verde" id="lista-01">
+            <div>Item 1</div>
+            <ul id="sublista-01">
+                <li>SubItem A</li>
+                <li>SubItem A</li>
+            </ul>
+        </li>
+        <li class="fundo-verde" id="lista-02">
+            <div>Item 2</div>
+            <ul id="sublista-02">
+                <li>SubItem A</li>
+                <li>SubItem A</li>
+            </ul>
+        </li>
+        <li class="fundo-azul" id="lista-03">
+            <div>Item 3</div>
+            <ul id="sublista-03">
+                <li>SubItem A</li>
+                <li>SubItem A</li>
+            </ul>
+        </li>
+    </ul>
+</body>
+
+</html>
